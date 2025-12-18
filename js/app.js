@@ -106,7 +106,7 @@ function renderDetailPage(generators, id) {
                     <p>${gen.description}</p>
                 </div>
                 ${specsHtml}
-                <button class="contact-btn" onclick="alert('Contact feature coming soon!')">Contact for Inquiry</button>
+                <a href="mailto:windhamtransmission@gmail.com?subject=Inquiry about ${encodeURIComponent(gen.title)}" class="contact-btn">Contact for Inquiry</a>
             </div>
         </div>
     `;
