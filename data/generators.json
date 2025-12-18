@@ -10,7 +10,9 @@
       "Voltage: 120/240V",
       "Phase: Single Phase",
       "Frequency: 60Hz",
-      "RPM: 1800""Operating Hours: 125""Package Type: Skid mounted"
+      "RPM: 1800",
+      "Operating Hours: 125",
+      "Package Type: Skid mounted",
     ],
     "imageCount": 6
   },
