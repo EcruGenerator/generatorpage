@@ -2,16 +2,17 @@
   {
     "id": "001",
     "title": "54KW Kohler NG Project",
-    "price": "$2500",
-    "description": "High-capacity Natural Gas / Propane generator project for standby use. Features a robust 5.7L Naturally aspirated GM engine and long-lasting durability. Unit includes replacement controller that is not installed",
+    "price": "$2,500",
+    "description": "Project 5.7L GM Propane/Natural Gas, Includes replacement controller that is not installed.",
     "specs": [
-      "Power: 54kW",
+      "Engine: 5.7L GM, Naturally Aspirated",
       "Fuel: Natural Gas or Propane",
+      "Power: 54kW",
+      "RPM: 1800",
+      "Operating Hours: 125",
       "Voltage: 120/240V",
       "Phase: Single Phase",
       "Frequency: 60Hz",
-      "RPM: 1800",
-      "Operating Hours: 125",
       "Package Type: Skid mounted"
     ],
     "imageCount": 6
