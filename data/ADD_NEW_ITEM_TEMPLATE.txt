@@ -1,0 +1,27 @@
+---------------------------------------------------------------------
+INSTRUCTIONS:
+1. Copy the block below (from { to }).
+2. Open 'generators.json'.
+3. Paste it inside the main list [ ... ], after the last item.
+   (Make sure to add a comma ',' after the previous item!)
+4. Fill in your details.
+---------------------------------------------------------------------
+
+{
+  "id": "FOLDER_NAME_HERE",
+  "title": "Product Title Here",
+  "price": "$0.00",
+  "description": "Write your description here.",
+  "specs": [
+    "Spec 1: Value"
+  ],
+
+  "// IMAGE OPTIONS - CHOOSE ONE STRATEGY //": "",
+  
+  "// Option A: Numbered photos (001.jpg, 002.jpg). Default is .jpg //": "",
+  "imageCount": 3,
+  "// imageExtension": "png",  <-- remove // to change to png or webp
+
+  "// Option B: Specific filenames (if mixed or custom names) //": "",
+  "// images": ["front.jpg", "back.png", "side.webp"]
+}

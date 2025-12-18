@@ -1,0 +1,43 @@
+[
+  {
+    "id": "001",
+    "title": "<dummy>Industrial Diesel Generator<dummy>",
+    "price": "$15,000",
+    "description": "High-capacity diesel generator suitable for industrial use. Features a robust engine and long-lasting durability.",
+    "specs": [
+      "Power: 100kW",
+      "Fuel: Diesel",
+      "Voltage: 480V"
+    ],
+    "imageCount": 6
+  },
+  {
+    "id": "002",
+    "title": "<dummy>Portable Home Inverter<dummy>",
+    "price": "$2,500",
+    "description": "Quiet and efficient portable inverter generator. Perfect for backing up essential home appliances during outages.",
+    "specs": [
+      "Power: 5000W",
+      "Fuel: Gasoline",
+      "Noise: 52dB"
+    ],
+    "imageCount": 0
+    "imageExtension": "png"
+  },
+  {
+    "id": "003",
+    "title": " <dummy>Commercial Standby Generator<dummy>",
+    "price": "$8,500",
+    "description": "Automatic standby generator for small businesses. Ensures continuous power supply with automatic transfer switch.",
+    "specs": [
+      "Power: 20kW",
+      "Fuel: Natural Gas / LP",
+      "Cooling: Liquid"
+    ],
+    "images": [
+      "001.jpg",
+      "diagram.png",
+      "003.webp"
+    ]
+  }
+]
