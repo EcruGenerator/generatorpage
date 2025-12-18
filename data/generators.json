@@ -1,7 +1,7 @@
 [
   {
     "id": "001",
-    "title": "<dummy>Industrial Diesel Generator<dummy>",
+    "title": "DUMMY Industrial Diesel Generator DUMMY",
     "price": "$15,000",
     "description": "High-capacity diesel generator suitable for industrial use. Features a robust engine and long-lasting durability.",
     "specs": [
@@ -13,7 +13,7 @@
   },
   {
     "id": "002",
-    "title": "<dummy>Portable Home Inverter<dummy>",
+    "title": "DUMMY Portable Home Inverter DUMMY",
     "price": "$2,500",
     "description": "Quiet and efficient portable inverter generator. Perfect for backing up essential home appliances during outages.",
     "specs": [
@@ -26,7 +26,7 @@
   },
   {
     "id": "003",
-    "title": " <dummy>Commercial Standby Generator<dummy>",
+    "title": "DUMMY Commercial Standby Generator DUMMY",
     "price": "$8,500",
     "description": "Automatic standby generator for small businesses. Ensures continuous power supply with automatic transfer switch.",
     "specs": [
