@@ -53,7 +53,7 @@ function renderDetailPage(generators, id) {
     }
 
     // Set page title
-    document.title = `${gen.title} - Generator Sales`;
+    document.title = `${gen.title} - Ecru Generator Sales`;
 
     // Determine Images
     let imageUrls = [];

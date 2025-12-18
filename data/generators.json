@@ -1,13 +1,16 @@
 [
   {
     "id": "001",
-    "title": "DUMMY Industrial Diesel Generator DUMMY",
-    "price": "$15,000",
-    "description": "High-capacity diesel generator suitable for industrial use. Features a robust engine and long-lasting durability.",
+    "title": "DUMMY 54KW Kohler NG",
+    "price": "$2500",
+    "description": "High-capacity Natural Gas / Propane generator project for standby use. Features a robust 5.7L Naturally aspirated GM engine and long-lasting durability. Unit includes replacement controller that is not installed",
     "specs": [
-      "Power: 100kW",
-      "Fuel: Diesel",
-      "Voltage: 480V"
+      "Power: 54kW",
+      "Fuel: Natural Gas or Propane",
+      "Voltage: 120/240V",
+      "Phase: Single Phase",
+      "Frequency: 60Hz",
+      "RPM: 1800""Operating Hours: 125""Package Type: Skid mounted"
     ],
     "imageCount": 6
   },
