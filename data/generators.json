@@ -1,11 +1,12 @@
-[
+ [
   {
     "id": "001",
-    "title": "54KW Kohler NG Project",
+    "title": "54kW Kohler NG Project",
     "price": "$2,500",
-    "description": "Project 5.7L GM Propane/Natural Gas, Includes replacement controller that is not installed.",
+    "description": "Low Hour 5.7L GM Propane/Natural Gas Project",
     "specs": [
-      "Engine: 5.7L GM, Naturally Aspirated",
+	  "Condition: Project Generator: Requires controller installation (New controller included)",
+	  "Engine: 5.7L GM, Naturally Aspirated",
       "Fuel: Natural Gas or Propane",
       "Power: 54kW",
       "RPM: 1800",
@@ -19,31 +20,41 @@
   },
   {
     "id": "002",
-    "title": "DUMMY Portable Home Inverter DUMMY",
-    "price": "$2,500",
-    "description": "Quiet and efficient portable inverter generator. Perfect for backing up essential home appliances during outages.",
-    "specs": [
-      "Power: 5000W",
-      "Fuel: Gasoline",
-      "Noise: 52dB"
+    "title": "105kW WinPower 8.1L 454 Turbo Natural Gas",
+    "price": "$4,500",
+    "description": "Formerly a firestation backup unit, this 100kW natural gas generator is powered by a GM 454-Turbo engine. It's housed in an industrial enclosure and has approximately 340 hours. The unit cranks, runs, and generates exactly as it should, providing 3-phase 208V, 347A or single-phase power. There is a rust hole on the turbo manifold, which is visible in the pictures.",
+     "specs": [
+	  "Condition: Cranks, Runs, stabilizes, not load tested (insufficient fuel supply at Ecru), rust hole in exhaust.",
+	  "Engine: 454ci 7.4L GM, Turbocharged",
+      "Fuel: Natural Gas",
+      "Power: 105kW",
+      "RPM: 1800",
+      "Operating Hours: 340",
+      "Voltage: 120/240/208V",
+      "Phase: Single or Three Phase",
+      "Frequency: 60Hz",
+      "Package Type: Skid mounted"
     ],
-    "imageCount": 0,
-    "imageExtension": "png"
+    "imageCount": 7
   },
   {
     "id": "003",
-    "title": "DUMMY Commercial Standby Generator DUMMY",
-    "price": "$8,500",
-    "description": "Automatic standby generator for small businesses. Ensures continuous power supply with automatic transfer switch.",
+    "title": "40kW 5.7L Natural Gas",
+    "price": "$5,000",
+    "description": "Formerly a firehouse power backup, this Winpower 40kW generator is in an industrial enclosure and is powered by natural gas, featuring a 5.7L GM engine. The unit has approximately 315 hours and runs and generates power exactly as it should, providing single or 3-phase power.",
     "specs": [
-      "Power: 20kW",
-      "Fuel: Natural Gas / LP",
-      "Cooling: Liquid"
+	  "Condition: ",
+	  "Engine: 5.7L GM, Naturally Aspirated",
+      "Fuel: Natural Gas",
+      "Power: 40kW",
+      "RPM: 1800",
+      "Operating Hours: 315",
+      "Voltage: 120/240V",
+      "Phase: 3 or Single Phase",
+      "Frequency: 60Hz",
+      "Package Type: Skid mounted"
     ],
-    "images": [
-      "001.jpg",
-      "diagram.png",
-      "003.webp"
+   "imageCount": 9
     ]
   }
 ]
