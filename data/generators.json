@@ -1,7 +1,7 @@
  [
   {
     "id": "001",
-    "title": "54kW Kohler NG Project",
+    "title": "54kW Kohler 5.7L NG Project",
     "price": "$2,500",
     "description": "Low Hour 5.7L GM Propane/Natural Gas Project",
     "specs": [
@@ -55,6 +55,6 @@
       "Package Type: Skid mounted"
     ],
    "imageCount": 9
-    ]
+
   }
 ]
