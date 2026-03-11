@@ -1,24 +1,5 @@
  [
   {
-  "id": "004",
-  "title": "100kW QuietSIte II 5.9L Cummins",
-  "price": "$17,500.00",
-  "description": "This is a nice 100kW Onan QuietSite II generator powered by a 5.9L Cummins Turbo-Diesel. It is capable of generating single or three-phase power and has approximately 7,020 hours on the machine. It's mounted on a sturdy trailer with a built-in ~225-gallon fuel tank—which is currently almost full. The sound-insulated enclosure makes the machine very quiet for the power generated. The worst thing about the entire machine is faded paint.
-",
-   "specs": [
-	  "Condition: 100% ready to hook up, wire in, and make power. ",
-	  "Engine: 5.9L Cummins Turbo-Diesel",
-      "Fuel: Diesel, ~225g tank onboard,",
-      "Power: 100kW",
-      "RPM: 1800",
-      "Operating Hours: 7020",
-      "Voltage: 120/240V/Multiple",
-      "Phase: 3 or Single Phase",
-      "Frequency: 60Hz",
-      "Package Type: Skid mounted"
-    ],
-   "imageCount": 7
-},{
     "id": "001",
     "title": "54kW Kohler 5.7L NG Project",
     "price": "$2,500",
@@ -75,6 +56,25 @@
     ],
    "imageCount": 9
 
-  }
+  },{
+  "id": "004",
+  "title": "100kW QuietSIte II 5.9L Cummins",
+  "price": "$17,500.00",
+  "description": "This is a nice 100kW Onan QuietSite II generator powered by a 5.9L Cummins Turbo-Diesel. It is capable of generating single or three-phase power and has approximately 7,020 hours on the machine. It's mounted on a sturdy trailer with a built-in ~225-gallon fuel tank—which is currently almost full. The sound-insulated enclosure makes the machine very quiet for the power generated. The worst thing about the entire machine is faded paint.
+",
+   "specs": [
+	  "Condition: 100% ready to hook up, wire in, and make power. ",
+	  "Engine: 5.9L Cummins Turbo-Diesel",
+      "Fuel: Diesel, ~225g tank onboard,",
+      "Power: 100kW",
+      "RPM: 1800",
+      "Operating Hours: 7020",
+      "Voltage: 120/240V/Multiple",
+      "Phase: 3 or Single Phase",
+      "Frequency: 60Hz",
+      "Package Type: Skid mounted"
+    ],
+   "imageCount": 7
+}
 
 ]
