@@ -1,4 +1,5 @@
- [{
+ [
+  {
     "id": "001",
     "title": "54kW Kohler 5.7L NG Project",
     "price": "$2,500",
@@ -42,7 +43,7 @@
     "price": "$5,000",
     "description": "Formerly a firehouse power backup, this Winpower 40kW generator is in an industrial enclosure and is powered by natural gas, featuring a 5.7L GM engine. The unit has approximately 315 hours and runs and generates power exactly as it should, providing single or 3-phase power.",
     "specs": [
-	  "Condition: Ready to Go",
+	  "Condition: ",
 	  "Engine: 5.7L GM, Naturally Aspirated",
       "Fuel: Natural Gas",
       "Power: 40kW",
@@ -55,95 +56,6 @@
     ],
    "imageCount": 9
 
-  },  
-{
-  "id": "004",
-  "title": "100kW QuietSIte II 5.9L Cummins",
-  "price": "$17,500.00",
-  "description": "This is a nice 100kW Onan QuietSite II generator powered by a 5.9L Cummins Turbo-Diesel. It is capable of generating single or three-phase power and has approximately 7,020 hours on the machine.
-
-This is an excellent unit mounted on a sturdy trailer with a built-in ~225-gallon fuel tank—which is currently almost full. The sound-insulated enclosure makes the machine very quiet for the power generated. The worst thing about the entire machine is faded paint.
-",
-   "specs": [
-	  "Condition: 100% ready to hook up, wire in, and make power. ",
-	  "Engine: 5.9L Cummins Turbo-Diesel",
-      "Fuel: Diesel, ~225g tank onboard,",
-      "Power: 100kW",
-      "RPM: 1800",
-      "Operating Hours: 7020",
-      "Voltage: 120/240V/Multiple",
-      "Phase: 3 or Single Phase",
-      "Frequency: 60Hz",
-      "Package Type: Skid mounted"
-    ],
-   "imageCount": 7
-}, 
-{
-  "id": "004",
-  "title": "100kW QuietSIte II 5.9L Cummins",
-  "price": "$17,500.00",
-  "description": "This is a nice 100kW Onan QuietSite II generator powered by a 5.9L Cummins Turbo-Diesel. It is capable of generating single or three-phase power and has approximately 7,020 hours on the machine.
-
-This is an excellent unit mounted on a sturdy trailer with a built-in ~225-gallon fuel tank—which is currently almost full. The sound-insulated enclosure makes the machine very quiet for the power generated. The worst thing about the entire machine is faded paint.
-",
-   "specs": [
-	  "Condition: 100% ready to hook up, wire in, and make power. ",
-	  "Engine: 5.9L Cummins Turbo-Diesel",
-      "Fuel: Diesel, ~225g tank onboard,",
-      "Power: 100kW",
-      "RPM: 1800",
-      "Operating Hours: 7020",
-      "Voltage: 120/240V/Multiple",
-      "Phase: 3 or Single Phase",
-      "Frequency: 60Hz",
-      "Package Type: Trailer mounted sound-insulated enclosure"
-    ],
-   "imageCount": 7
-},
-{
-  "id": "005",
-  "title": "55kW Kohler / John Deere Quiet Generator",
-  "price": "$12,000.00",
-  "description": "A solid 55kW Kohler unit housed in a sound-insulated Detroit Diesel enclosure, making it an exceptionally quiet machine while running. It is powered by a reliable 4.5L John Deere 4045 Turbo-Diesel engine and is strictly configured for Single-Phase power, ideal for residential backup or dedicated commercial use.
-
-The unit has approximately 7,720 hours and is mounted on a heavy-duty trailer equipped with a built-in fuel tank for easy transport and setup. The John Deere 4045 is known for its longevity and easy parts availability, and it runs very well in this configuration. As with our other units, the worst thing about the entire machine is faded paint—mechanically, it is ready to be wired up and put to work immediately.
-
-",
-   "specs": [
-	  "Condition: 100% ready to hook up, wire in, and make power. ",
-	  "Engine: 4045 John Deere 4.5L Turbo-Diesel",
-      "Fuel: Diesel,",
-      "Power: 55kW",
-      "RPM: 1800",
-      "Operating Hours: ~7720",
-      "Voltage: 120/240V",
-      "Phase: Single Phase, 3ph (with rewire)",
-      "Frequency: 60Hz",
-      "Package Type: Trailer mounted sound-insulated enclosure"
-    ],
-   "imageCount": 12
-},
-{
-  "id": "006",
-  "title": "80kW Kohler / John Deere Quiet Generator",
-  "price": "$15,000.00",
-  "description": "80kW Kohler powered by a 4.5L John Deere 4045 Turbo-Diesel. This is a highly versatile unit, capable of providing both single and three-phase power at the flip of a switch.
-
-With only ~3,780 hours, this machine has plenty of life left and is mounted on a solid trailer with an integrated fuel tank for easy transport and operation. The John Deere engine is a reliable workhorse, and the generator itself is in great mechanical shape. Like our other listings, the worst thing about the entire machine is faded paint—it is otherwise ready to be put into service immediately.
-",
-   "specs": [
-	  "Condition: 100% ready to hook up, wire in, and make power. ",
-	  "Engine: 4045 John Deere 4.5L Turbo-Diesel",
-      "Fuel: Diesel,",
-      "Power: 80kW",
-      "RPM: 1800",
-      "Operating Hours: ~3780",
-      "Voltage: 120/240V",
-      "Phase: Switchable 3 or Single Phase",
-      "Frequency: 60Hz",
-      "Package Type: Trailer mounted sound-insulated enclosure"
-    ],
-   "imageCount": 12
-}
+  }
 
 ]
