@@ -1,50 +1,56 @@
-# Generator Sales Website Walkthrough
+# Generator Sales Website
 
-I have set up the complete static website structure for you. The site is ready to be hosted on GitHub Pages.
+Static site for Ecru Generator Sales, hosted on GitHub Pages.
 
 ## 📂 Project Structure
 
 ```
 generatorpage/
-├── index.html           # Main Gallery Page
-├── detail.html          # Product Detail Page
+├── index.html              # Main Gallery Page
+├── detail.html             # Product Detail Page (single template, no per-product files)
+├── about.html              # About Us page
 ├── css/
-│   └── styles.css       # Design & Styling
+│   └── styles.css          # Design & Styling
 ├── js/
-│   └── app.js           # Logic (loads data & images)
+│   └── app.js              # Logic: reads catalog.json, then each folder's item.json
 ├── data/
-│   └── generators.json  # YOUR DATA FILE (Edit this!)
-└── generators/          # IMAGE FOLDERS (Drop images here!)
-    ├── 001/             # Images for Generator 001
+│   ├── catalog.json        # List of folder IDs to display  (edit this to add/remove products)
+│   └── item-template.json  # Copy this into each new product folder
+└── generators/
+    ├── 001/               # Product folder: images + item.json
     │   ├── 001.jpg
-    │   └── 002.jpg
+    │   ├── 002.jpg
+    │   └── item.json       # Product metadata (title, price, description, specs)
     ├── 002/
     └── ...
 ```
 
+## How to Add a Product
 
+Each product is a self-contained folder under `generators/`. No central data file to grow, no per-product HTML.
 
-**IMPORTANT**: You do NOT need to create a new `detail.html` file for every product. The site uses one smart template that updates automatically based on the ID.
+1. **Create a folder** under `generators/` named after your product ID (e.g. `generators/007/`).
+2. **Drop your images** into that folder.
+   - **Simple convention**: name them `001.jpg`, `002.jpg`, `003.jpg` … — all zero-padded, all the same extension.
+   - **Mixed or custom filenames**: use an `"images"` list in `item.json` instead of `imageCount` (see template).
+   - **Other formats**: set `"imageExtension": "png"` (or `"webp"`) in `item.json`.
+3. **Create `item.json`** inside the folder — copy from `data/item-template.json` and fill in:
+   - `title`, `price`, `description`, `specs` (array of strings).
+   - Either `imageCount` + `imageExtension` (default `.jpg`), **or** an explicit `"images"` array.
+4. **Add the folder ID to `data/catalog.json`** — one entry per line, e.g. `"007"`.
 
-### 1. Add Text Data
-1.  Open `data/ADD_NEW_ITEM_TEMPLATE.txt`.
-2.  Copy the code block.
-3.  Open `data/generators.json`.
-4.  Paste the code at the bottom of the list (remember to add a comma `,` after the previous item!).
-5.  Fill in your `id` (must match folder name), `title`, `price`, etc.
+That's it. The site picks it up automatically on the next load.
 
-### 2. Add Images
-1.  Create a folder inside `generators/` matching your ID.
-2.  Drop your images in there.
-3.  **Naming**:
-    *   **Simple Way**: Name them `001.jpg`, `002.jpg`... (Default).
-    *   **Other Formats**: If using `.png` or `.webp`, add `"imageExtension": "png"` to your JSON.
-    *   **Custom Names**: If you want mixed types or specific names, use `"images": ["my-pic.jpg", "other.png"]` in your JSON instead of `imageCount`.
+## ⚠️ Tips
 
-## 🌐 Serving on GitHub
-1. Commit and push these files to your GitHub repository.
-2. Go to **Settings > Pages**.
-3. Select `Source: main branch` (or `/docs` if you move files there).
-4. Your site will be live!
+- Image filenames should be lowercase (`.jpg` not `.JPG`).
+- Keep counts consistent: if `imageCount: 7`, you need exactly `001.jpg`–`007.jpg` in the folder.
+- The site must be served over HTTP. GitHub Pages works fine; opening `index.html` directly via `file://` will not load data (browser CORS). Open the live URL instead.
+- Broken images fall back to a placeholder. If a folder is listed in `catalog.json` but has no valid `item.json`, it is silently skipped — check the browser console for a warning.
 
-> **Note**: If you see broken images initially, ensure your file extensions are lowercase `.jpg` (not `.JPG`) and numbers match the `imageCount` in your JSON.
+## Hosting on GitHub Pages
+
+1. Commit and push to your GitHub repository.
+2. Go to **Settings → Pages**.
+3. Select **Source: main branch**.
+4. Your site is live at `https://<username>.github.io/<repo>/generatorpage/`.

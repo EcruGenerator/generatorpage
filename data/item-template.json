@@ -1,0 +1,19 @@
+{
+  "title": "Your Product Title",
+  "price": "$0.00",
+  "description": "Describe your generator here.",
+  "specs": [
+    "Condition: Ready to wire up and make power",
+    "Engine: X.L Engine",
+    "Fuel: Diesel",
+    "Power: XXkW",
+    "RPM: 1800",
+    "Operating Hours: ~XXXX",
+    "Voltage: 120/240V",
+    "Phase: Single or Three Phase",
+    "Frequency: 60Hz",
+    "Package Type: Skid mounted"
+  ],
+  "imageCount": 3,
+  "imageExtension": "jpg"
+}

@@ -3,16 +3,29 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     const detailId = urlParams.get('id');
 
-    fetch('data/generators.json')
+    fetch('data/catalog.json')
         .then(response => response.json())
-        .then(data => {
+        .then(ids => {
+            const loaders = ids.map(id =>
+                fetch(`generators/${id}/item.json`)
+                    .then(r => r.ok ? r.json() : Promise.reject())
+                    .then(data => ({ id, ...data }))
+                    .catch(() => {
+                        console.warn(`Skipping ${id}: item.json missing or invalid`);
+                        return null;
+                    })
+            );
+            return Promise.all(loaders);
+        })
+        .then(items => {
+            const generators = items.filter(item => item !== null);
             if (detailId) {
-                renderDetailPage(data, detailId);
+                renderDetailPage(generators, detailId);
             } else {
-                renderGallery(data);
+                renderGallery(generators);
             }
         })
-        .catch(error => console.error('Error loading data:', error));
+        .catch(error => console.error('Error loading catalog:', error));
 });
 
 function renderGallery(generators) {
@@ -20,7 +33,6 @@ function renderGallery(generators) {
     if (!grid) return;
 
     grid.innerHTML = generators.map(gen => {
-        // Resolve Thumbnail URL
         let thumbUrl;
         if (gen.images && gen.images.length > 0) {
             thumbUrl = `generators/${gen.id}/${gen.images[0]}`;
@@ -52,18 +64,14 @@ function renderDetailPage(generators, id) {
         return;
     }
 
-    // Set page title
     document.title = `${gen.title} - Ecru Generator Sales`;
 
-    // Determine Images
     let imageUrls = [];
     if (gen.images && Array.isArray(gen.images)) {
-        // Option A: Explicit list of filenames (allows mixed types like .png, .gif)
         imageUrls = gen.images.map(filename => `generators/${gen.id}/${filename}`);
     } else {
-        // Option B: Auto-numbered (001, 002...) with optional extension
         const count = gen.imageCount || 0;
-        const ext = gen.imageExtension || 'jpg'; // Default to jpg
+        const ext = gen.imageExtension || 'jpg';
         for (let i = 1; i <= count; i++) {
             const num = String(i).padStart(3, '0');
             imageUrls.push(`generators/${gen.id}/${num}.${ext}`);
@@ -74,18 +82,15 @@ function renderDetailPage(generators, id) {
         imageUrls.push(`https://placehold.co/800x600?text=No+Images`);
     }
 
-    // Main Image is the first one
     const mainImageUrl = imageUrls[0];
 
-    // Generate Thumbnails
     let thumbsHtml = imageUrls.map((url, index) => `
-        <img src="${url}" 
-             class="thumb ${index === 0 ? 'active' : ''}" 
+        <img src="${url}"
+             class="thumb ${index === 0 ? 'active' : ''}"
              onclick="changeMainImage('${url}', this)"
              onerror="this.style.display='none'">
     `).join('');
 
-    // Generate Specs HTML
     const specsHtml = gen.specs ?
         `<ul class="specs-list">${gen.specs.map(spec => `<li>${spec}</li>`).join('')}</ul>` :
         '';
@@ -112,7 +117,6 @@ function renderDetailPage(generators, id) {
     `;
 }
 
-// Global function for image switching
 window.changeMainImage = function (url, thumbElement) {
     document.getElementById('main-image').src = url;
     document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
